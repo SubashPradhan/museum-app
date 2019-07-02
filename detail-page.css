@@ -23,6 +23,7 @@ h1 {
 }
 h1:hover{
     color: #111010;
+    cursor: wait;
     transition-duration: 0.9s;
 }
 h2{

@@ -26,9 +26,9 @@ h1:hover{
     cursor: wait;
     transition-duration: 0.9s;
 }
+
 h2{
     color: rgb(255, 0, 0);
-    /* display: initial; */
     transition-duration: 3.2s;
 }
 

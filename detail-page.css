@@ -1,0 +1,60 @@
+body{
+    background: #FFBA00;
+    font-family: 'Inconsolata', monospace;
+    text-align: center;
+    margin: 0;
+    padding: 2rem 0;
+    width : 100%;
+}
+
+main{
+    background: white;
+    width: 90%;
+    margin: auto;
+    border-radius: 5px;
+    padding: 2rem 0;
+}
+
+h1 {
+    margin: 3rem 1rem 6rem 1rem;
+    color: rgb(226, 86, 43);
+    text-decoration: underline;
+
+}
+h1:hover{
+    color: #111010;
+    transition-duration: 0.9s;
+}
+h2{
+    color: rgb(255, 0, 0);
+    /* display: initial; */
+    transition-duration: 3.2s;
+}
+
+.artObject {
+    max-width: 80%;
+    max-height: 20rem;
+    margin: 3rem;
+    display: block;
+    transition: 0.4s ease-in;
+}
+.artObject:hover{
+    transform: scale(1.1);
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media (max-width: 500px) {
+    h1{
+        text-decoration: none;
+        color: red;
+        font-size: 25px;
+    }
+
+
+}

@@ -1,6 +1,7 @@
 body{
     background: #FFBA00;
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Fjalla One', sans-serif;
+    font-family: 'Permanent Marker', cursive;
     text-align: center;
     margin: 0;
     padding: 2rem 0;
@@ -15,8 +16,63 @@ main{
     border-radius: 5px;
     padding: 2rem 0;
 }
+h1, h2, h3{
+    font-weight: bold;
+}
 
 img{
     width: 50%;
     min-width: 15rem;
 }
+
+.comment {
+    margin: 1rem auto;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: 50%;
+    min-width: 15rem;
+}
+
+.formSection {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    margin: 2rem auto;
+    width: 50%;
+    min-width: 15rem;
+    padding: 1rem;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+}
+label{
+    font-weight: bold;
+}
+
+input, textarea {
+    box-sizing: border-box;
+    border: 1px solid #999;
+    min-height: 2rem;
+    font-size: 1.2rem;
+    width: 80%;
+}
+button {
+    font: inherit;
+    background-color: transparent;
+    border: solid 1px transparent;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    background-color: black;
+    margin: 2rem auto;
+}
+
+button:hover{
+    background-color: white;
+    color: grey;
+    border: solid 1px black;
+}
+
+
+

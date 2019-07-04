@@ -324,8 +324,8 @@ const data = {
     ]
 }
 const paintings = data.artObjects; //gather data
-    
-function displayPainting(painting){
+
+function displayPainting(painting) {
 
     // const painting = paintings[i];       
     const gallery = document.getElementById('gallery');
@@ -333,36 +333,42 @@ function displayPainting(painting){
 
     const img = document.createElement('img');
     const a = document.createElement('a')
+    const button = document.createElement('button');
 
 
     //adjust element
-    img.alt = painting.title ;
-    img.src = painting ;
+    img.alt = painting.title;
+    img.src = painting;
     a.href = link;
 
-    
+
+
     //display elements
     gallery.appendChild(a);
     a.appendChild(img);
     ;
-       
+
 }
 
-for (let i = 0; i < paintings.length; i++) {  
-    const currentPainting = paintings[i]
-    if (currentPainting.webImage.width > 2000 || currentPainting.principalOrFirstMaker === 'Gerard van Honthorst'){
-        displayPainting(currentPainting.webImage.url)
-    }    
+
+function getPainterByName(name) {
+    for (let i = 0; i < paintings.length; i++) {
+        let currentPainting = paintings[i]
+        let painter = document.getElementById('painter');
+        let realPainter = painter.value
+        // console.log(realPainter)
+        if (realPainter == currentPainting.principalOrFirstMaker) {
+            displayPainting(currentPainting.webImage.url);
+            return true
+        }
+        alert('Sorry we dont have those painting!!')
+        return null
+    }
+
+
+    //   if (currentPainting.webImage.width > 2000 || currentPainting.principalOrFirstMaker === 'Gerard van Honthorst'){
+    //      displayPainting(currentPainting.webImage.url)
+    //  }    
+    // getPainterByName(displayPainting(currentPainting))
+
 }
-    
-        
-
-
-
-
-//     // check specific validation
-//     if (specificationValidationChecker(paintings[i])) {
-//       //display if passed
-//       displayPainting(currentPainting)
-//     }
-//    }

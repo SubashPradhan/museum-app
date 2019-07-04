@@ -49,6 +49,18 @@ h2{
     align-items: flex-start;
 }
 
+#painter{
+    box-sizing: border-box;
+    border: 1px solid #999;
+    min-height: 2rem;
+    font-size: 1.2rem;
+    width: 80%;
+
+}
+.go{
+    border: 1px solid black;
+    display: block;
+}
 @media (max-width: 500px) {
     h1{
         text-decoration: none;

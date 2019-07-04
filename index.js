@@ -325,18 +325,9 @@ const data = {
 }
 const paintings = data.artObjects; //gather data
     
-for (let i = 0; i < paintings.length; i++) {  
-    const currentPainting = paintings[i].webImage.url 
-    displayPainting(currentPainting);
-}
-
 function displayPainting(painting){
 
-    if(painting.webImage.width){
-        return null
-    }
-         
-    // const painting = paintings[i];   
+    // const painting = paintings[i];       
     const gallery = document.getElementById('gallery');
     const link = "./pages/detail-page.html"
 
@@ -357,6 +348,12 @@ function displayPainting(painting){
        
 }
 
+for (let i = 0; i < paintings.length; i++) {  
+    const currentPainting = paintings[i]
+    if (currentPainting.webImage.width > 2000 || currentPainting.principalOrFirstMaker === 'Gerard van Honthorst'){
+        displayPainting(currentPainting.webImage.url)
+    }    
+}
     
         
 
